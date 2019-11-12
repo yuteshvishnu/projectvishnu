@@ -1,0 +1,157 @@
+/* .newclass{
+  position: fixed;
+  opacity: 0.7;
+  background-color: #5edfff;
+} */
+body{
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+.signinbutton{
+  text-decoration: none;
+}
+.white-body{
+  background-color: white;
+  color: black;
+}
+.coloured-body{
+  background-color: #5edfff;
+  color: white;
+}
+
+#title{
+  margin: 0;
+}
+.big-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+h2,h3{
+  font-weight: bold;
+}
+p{
+  color: #8f8f8f;
+}
+.container-fluid{
+  padding: 3% 15%;
+  margin: 80px;
+}
+.iphoneimage{
+  transform: rotate(25deg);
+  width: 60%;
+  position: absolute;
+  right: 30%;
+  z-index: 4;
+}
+.imageitem2{
+  color: #3e64ff;
+  margin-bottom: 1rem;
+}
+.imageitem2:hover{
+  color: #5edfff;
+}
+.testimonialimage{
+  border-radius: 100%;
+  width: 15%;
+}
+.pressimage{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+#features,#cta,#testimonials .carousel-item,#footer{
+  padding: 7% 15%;
+}
+
+#features{
+  position: relative;
+  z-index: 1;
+}
+.navbar{
+  /* padding: 0 0 4.5rem; */
+  width: 100%;
+  background-color: #5edfff;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 80px;
+  opacity: 0.95;
+}
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+
+/* testimonials section */
+#testimonials{
+  background-color: #3e64ff;
+}
+
+/* press section */
+#press{
+  background-color: #3e64ff;
+}
+
+/* .carousel-item{
+  padding: 7% 15%;
+} */
+
+#pricing{
+  padding: 100px;
+}
+.priceitem{
+  padding: 3% 2%;
+}
+/* .extraclass{
+  height: 300px;
+  background-color: white;
+  position: relative;
+  bottom: 250px;
+  z-index: 1;
+} */
+
+/* media section */
+@media (max-width: 1028px) {
+  #title{
+    text-align: center;
+  }
+  .iphoneimage{
+    position: static;
+    transform: rotate(0);
+  }
+}
+/* cta section */
+/* #cta{
+  padding: 7% 15%;
+} */
+/* footer section */
+#footer{
+  /* padding: 7% 15%; */
+  margin-top: 50px;
+}
+.abc{
+margin: 3% 1% 3% 0;
+color: black;
+}
+
+.xy{
+  color: white;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Book club</title>
+  <!-- google fonts -->
+
+  <link rel="icon" href="favicon-2.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- css stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+<script src="https://kit.fontawesome.com/eaf37ab201.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">Yutesh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#item1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="item1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="navbar-brand xy" >
+            <%= abcd %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">
+            Latest
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sign-in">
+            <%= nameplan %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#cta"> -->
+            <form action="/cart" method="post">
+              <button type="button" class="btn btn-outline-light btn-lg" onClick="this.form.submit()">
+            <i class="image-1 fas fa-shopping-cart">Cart</i>
+            <%= count %>
+            </button>
+            </form>
+          <!-- </a> -->
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="coloured-body" id="title">
+    <div class="container-fluid">
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Get the latest books online for free.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="iphoneimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-tLVUETDtPsXcsaekPbuWD6wJXEqfratHh6usJfgUP5RiYWIh" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+  <section class="white-body" id="features">
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-check-circle imageitem2 fa-4x"></i>
+        <h3>Trusted</h3>
+        <p>got linked with best book sellers</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-bullseye imageitem2 fa-4x"></i>
+        <h3>Best price</h3>
+        <p>We provide the lowest cost possible</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-heart imageitem2 fa-4x"></i>
+        <h3>Guaranteed content</h3>
+        <p>Find the love of your life in a book</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="coloured-body" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Life's Amazing Secrets: How to Find Balance and Purpose in Your Life</h2>
+          <img class="testimonialimage" src="https://m.media-amazon.com/images/I/71x5CcgGENL._AC_UY218_ML3_.jpg" alt="dog-profile">
+          <em>Bestseller</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">The Theory of Everything.</h2>
+          <img class="testimonialimage" class="testimonial-image" src="https://m.media-amazon.com/images/I/51oHUvYzbsL._AC_UY218_ML3_.jpg" alt="lady-profile">
+          <em>Book of Today</em>
+        </div>
+
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <!-- Pricing -->
+
+
+  <!-- <div class="row pricetable">
+        <div class="col-lg-4 col-md-6 priceitem">
+          <div class="card">
+            <div class="card-header">
+              <img src="https://m.media-amazon.com/images/I/61O9uqUfQDL._AC_UY218_ML3_.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h2>
+                <i class="fas fa-rupee-sign fa-1x">100</i>
+              </h2>
+              <p>How to Stop Worrying and Start Living: Time-Tested Methods for Conquering Worry</p>
+              <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 priceitem">
+          <div class="card">
+            <div class="card-header">
+              <img src="https://m.media-amazon.com/images/I/81rsnHmlrbL._AC_UY218_ML3_.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h2>
+                  <i class="fas fa-rupee-sign fa-1x">150</i>
+              </h2>
+              <p>How to Win Friends and Influence People</p>
+              <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 priceitem">
+            <div class="card">
+              <div class="card-header">
+                <img src="https://m.media-amazon.com/images/I/710jnzKlDTL._AC_UY218_ML3_.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <h2>
+                    <i class="fas fa-rupee-sign fa-1x">150</i>
+                </h2>
+                <p>Attitude Is Everything: Change Your Attitude ... Change Your Life!</p>
+                <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+              </div>
+            </div>
+            </div> -->
+  <!-- <div class="col-lg-4 col-md-6 priceitem">
+              <div class="card">
+                <div class="card-header">
+                  <img src="https://m.media-amazon.com/images/I/71t4GuxLCuL._AC_UY218_ML3_.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h2>
+                      <i class="fas fa-rupee-sign fa-1x">150</i>
+                  </h2>
+                  <p>The Subtle Art of Not Giving a F*ck</p>
+                <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 priceitem">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="https://m.media-amazon.com/images/I/81rsnHmlrbL._AC_UY218_ML3_.jpg" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h2>
+                        <i class="fas fa-rupee-sign fa-1x">150</i>
+                    </h2>
+                    <p>How to Win Friends and Influence People</p>
+                    <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 priceitem">
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="https://m.media-amazon.com/images/I/71x5CcgGENL._AC_UY218_ML3_.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h2>
+                          <i class="fas fa-rupee-sign fa-1x">150</i>
+                      </h2>
+                      <p>Life's Amazing Secrets: How to Find Balance and Purpose in Your Life</p>
+                      <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 priceitem">
+                    <div class="card">
+                      <div class="card-header">
+                        <img src="https://m.media-amazon.com/images/I/51G3MfByofL._AC_UY218_ML3_.jpg" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h2>
+                            <i class="fas fa-rupee-sign fa-1x">150</i>
+                        </h2>
+                        <p>The Girl in Room 105</p>
+                        <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 priceitem">
+                      <div class="card">
+                        <div class="card-header">
+                          <img src="https://m.media-amazon.com/images/I/91VokXkn8hL._AC_UY218_ML3_.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                          <h2>
+                              <i class="fas fa-rupee-sign fa-1x">150</i>
+                          </h2>
+                          <p>Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!</p>
+                          <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 priceitem">
+                        <div class="card">
+                          <div class="card-header">
+                            <img src="https://m.media-amazon.com/images/I/81rsnHmlrbL._AC_UY218_ML3_.jpg" alt="">
+                          </div>
+                          <div class="card-body">
+                            <h2>
+                                <i class="fas fa-rupee-sign fa-1x">150</i>
+                            </h2>
+                            <p>How to Win Friends and Influence People</p>
+                            <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 priceitem">
+                          <div class="card">
+                            <div class="card-header">
+                              <img src="https://m.media-amazon.com/images/I/91MA0P7wEPL._AC_UY218_ML3_.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                              <h2>
+                                  <i class="fas fa-rupee-sign fa-1x">150</i>
+                              </h2>
+                              <p>Raavan: Enemy of Aryavarta (Ram Chandra Series - Book 3)</p>
+                              <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 priceitem">
+                            <div class="card">
+                              <div class="card-header">
+                                <img src="https://m.media-amazon.com/images/I/51oHUvYzbsL._AC_UY218_ML3_.jpg" alt="">
+                              </div>
+                              <div class="card-body">
+                                <h2>
+                                    <i class="fas fa-rupee-sign fa-1x">150</i>
+                                </h2>
+                                <p>The Theory of Everything</p>
+                                <button type="button" class="btn btn-outline-dark btn-block" onChange="this.form.submit()">Add to cart</button>
+                              </div>
+                            </div>
+                            </div> -->
+
+  <section class="white-body" id="pricing">
+    <div class="row pricetable">
+    <%  bookItems.forEach(function(item){ %>
+      <div class="col-lg-4 col-md-6 priceitem">
+        <form action="/add" method="post">
+
+        <div class="card">
+          <div class="card-header">
+            <img src="<%=item.image %>" alt="">
+          </div>
+          <div class="card-body">
+            <h2>
+              <i class="fas fa-rupee-sign fa-1x"> <%= item.cost%> </i>
+            </h2>
+            <p> <%=item.name%></p>
+            <button type="button" class="btn btn-outline-dark btn-block" name="element" value="<%=item._id%>" onClick="this.form.submit()"> <%= item.add %> </button>
+          </div>
+        </div>
+        <input type="hidden" name="listitem" value="<%= item.name %>"></input>
+      </form>
+      </div>
+      <% }) %>
+        </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="coloured-body" id="cta">
+
+    <h3 class="big-heading">Find the best book for you Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-body" id="footer">
+    <i class=" abc fab fa-twitter-square fa-1x"></i>
+    <i class="abc fab fa-facebook-f fa-1x"></i>
+    <i class="abc fab fa-instagram fa-1x"></i>
+    <i class="abc fas fa-envelope fa-1x"></i>
+    <p>© Yutesh Book Club</p>
+
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app2.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
